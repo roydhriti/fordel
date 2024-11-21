@@ -1,0 +1,16 @@
+@import "../src/assets/scss/media-queries.scss";
+
+.HomePage {
+  .HeaderWrap {
+    padding-top: 5.5rem;
+    transition: padding 0.2s ease;
+
+    &.Scrolled {
+      padding-top: 0;
+    }
+
+    @include lt-sm {
+      padding-top: 3rem;
+    }
+  }
+}

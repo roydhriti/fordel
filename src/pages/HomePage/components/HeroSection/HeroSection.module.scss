@@ -1,0 +1,179 @@
+@import "../src/assets/scss/media-queries.scss";
+
+.HeroSection {
+  height: 100%;
+  width: 100%;
+  padding-top: 13vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #fff;
+
+  @include lt-sm {
+    height: 91%;
+  }
+
+  .HeroHeaderContent {
+    width: 123.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    @include lt-lg {
+      width: 80rem;
+      height: auto;
+    }
+
+    @include lt-md {
+      width: 70rem;
+      height: auto;
+    }
+
+    @include lt-sm {
+      width: 40rem;
+      height: auto;
+    }
+
+    .ContentWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .SoftHeader {
+        padding: 1rem 4rem;
+        border: 1px solid #d9d9d9;
+        border-radius: 12.5rem;
+
+        h6 {
+          @include lt-sm {
+            font-size: 1.75rem;
+          }
+        }
+      }
+
+      .BoldHeader {
+        text-align: center;
+
+        h1 {
+          font-size: 7rem;
+          line-height: 8rem;
+
+          @include lt-lg {
+            font-size: 6rem;
+            line-height: 7rem;
+          }
+
+          @include lt-md {
+            font-size: 5rem;
+            line-height: 6rem;
+          }
+
+          @include lt-sm {
+            font-size: 4rem;
+            line-height: 5.5rem;
+          }
+        }
+      }
+    }
+
+    .ButtonWrap {
+      padding-top: 5rem;
+      display: none;
+
+      a {
+        font-size: 1.75rem;
+      }
+
+      .MenuButton {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1rem 2rem;
+        background: transparent;
+        border: 2px solid #333;
+
+        p {
+          font-weight: 600;
+        }
+      }
+
+      @include lt-sm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+
+  .HeroParaContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 40vh;
+
+    @include lt-lg {
+      top: 50vh;
+    }
+
+    @include lt-md {
+      display: none;
+    }
+
+    @include lt-sm {
+      display: none;
+    }
+
+    .IconDescriptionWrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20vw;
+      width: 100vw;
+
+      @include lt-lg {
+        padding: 0 16rem;
+      }
+
+      .IconDescription {
+        width: 34.5rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        @include lt-lg {
+          width: 28rem;
+          height: 24rem;
+        }
+
+        h6 {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+  .BackgroundImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    bottom: 0;
+    min-width: 94.375rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

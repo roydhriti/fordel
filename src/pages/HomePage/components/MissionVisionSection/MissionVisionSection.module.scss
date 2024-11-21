@@ -1,0 +1,231 @@
+@import "../src/assets/scss/media-queries.scss";
+
+.MissionVisionSection {
+  width: 100%;
+  height: auto;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-image: url("../../../../../public/images/mission-vision-background.svg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+
+  .MissionVissionHeader {
+    padding: 1rem 4rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 2rem;
+  }
+
+  .MissionVisionContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11.75rem;
+    margin-top: 5rem;
+    height: auto;
+
+    @include lt-md {
+      flex-direction: column;
+    }
+
+    @include lt-sm {
+      flex-direction: column;
+      gap: 2.875rem;
+    }
+
+    .ContentDiv {
+      width: clamp(40.25rem, 30vw, 67.25rem);
+      height: 23.5rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      @include lt-lg {
+        height: 100%;
+      }
+
+      @include lt-md {
+        height: auto;
+        width: 60.25rem;
+      }
+
+      @include lt-sm {
+        height: auto;
+        width: 40.25rem;
+      }
+
+      .MissionImageWrap {
+        margin-right: 2rem;
+        margin-top: 4px;
+
+        img {
+          height: 100%;
+        }
+
+        @include lt-md {
+          margin-right: 1.4rem;
+          margin-top: 2.8px;
+        }
+
+        @include lt-sm {
+          height: 8.4rem;
+          margin-right: 1.4rem;
+          margin-top: 2.8px;
+        }
+      }
+
+      .VisionImageWrap {
+        margin-right: 2.5rem;
+        margin-top: 2.5rem;
+
+        img {
+          height: 100%;
+        }
+
+        @include lt-md {
+          margin-right: 2.25rem;
+          margin-left: 7px;
+          margin-top: 1.75rem;
+        }
+
+        @include lt-sm {
+          height: 6.65rem;
+          margin-right: 2.25rem;
+          margin-left: 7px;
+          margin-top: 1.75rem;
+        }
+      }
+
+      .ContentWrap {
+        padding-top: 4px;
+        height: 100%;
+        border-left: 2px solid #d9d9d9;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+  }
+
+  .ObjectiveWrap {
+    margin-top: 8rem;
+
+    .ObjectiveHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 38.625rem;
+      gap: clamp(18.625rem, 16vw, 38.625rem);
+
+      @include lt-md {
+        flex-direction: column;
+        gap: 5rem;
+      }
+
+      @include lt-sm {
+        flex-direction: column;
+        gap: 5rem;
+        width: 40.25rem;
+      }
+
+      .ContentWrap {
+        width: 43.625rem;
+
+        @include lt-md {
+          h2 {
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 5rem;
+          }
+        }
+
+        @include lt-sm {
+          width: 100%;
+          text-align: left;
+
+          h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 4rem;
+            width: 25.5rem;
+          }
+        }
+      }
+
+      .ImageWrap {
+        width: 29.875rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .ObjectiveBody {
+      margin-top: 6rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(4, 36rem);
+      gap: 4rem;
+
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   width: 30.75rem;
+      //   height: 30.75rem;
+      //   z-index: -1;
+      //   background-image: url("../../../../../public/images/circle-right.svg");
+      //   background-repeat: no-repeat;
+      //   background-size: cover;
+      //   background-position: center;
+      // }
+
+      @include lt-lg {
+        grid-template-columns: repeat(2, 36rem);
+      }
+
+      @include lt-sm {
+        grid-template-columns: repeat(1, 36rem);
+      }
+
+      .BodyContentWrap {
+        height: 41.25rem;
+        padding: 3rem;
+        border-radius: 2rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+
+        .BodyHeader {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 2rem;
+
+          .HeaderImageWrap {
+            width: 8rem;
+            height: 8rem;
+
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+
+        .BodyTextWrap {
+          width: 30rem;
+        }
+      }
+    }
+  }
+}

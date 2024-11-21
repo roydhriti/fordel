@@ -1,0 +1,94 @@
+.OurServicesSection {
+  padding-top: 10rem;
+  width: 100%;
+  height: auto;
+
+  .OurServicesHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55.875rem;
+
+    .leftHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 3rem;
+
+      .SoftHeader {
+        padding: 1rem 4rem;
+        border: 1px solid #d9d9d9;
+        border-radius: 2rem;
+      }
+    }
+
+    .RightHeader {
+      .HeaderContent {
+        p {
+          width: 51.625rem;
+        }
+      }
+    }
+  }
+
+  .OurServicesBody {
+    margin-top: 8rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 37.25rem);
+    gap: 5rem;
+
+    .ServicesCard {
+      height: auto;
+      width: auto;
+      padding: 3rem;
+      border: 1px solid #e2e2e2;
+      border-radius: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      .ImageWrap {
+        width: 31.25rem;
+        height: 20.875rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .ServiceContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        .ContentTags {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 1rem;
+
+          p {
+            color: #808080;
+          }
+
+          .Circle {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            background-color: #e9b389;
+          }
+        }
+      }
+    }
+  }
+}
